@@ -1,42 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main block
- * Description: Write a program that prints all possible
+ * main - prints possible outcomes of three digits
  * Return: 0
  */
 int main(void)
 {
-int c;
-int d;
-int e = 0;
+int g;
+int h;
+int i = 0;
 
-while (e < 10)
+while (i < 10)
 {
-d = 0;
-while (d < 10)
+h = 0;
+while (h < 10)
 {
-c = 0;
-while (c < 10)
+g = 0;
+while (g < 10)
 {
-if (c != d && d != e && e < d && d < c)
+if (g != d && h != i && i < h && h < g)
 {
-putchar('0' + e);
-putchar('0' + d);
-putchar('0' + c);
+putchar('0' + i);
+putchar('0' + h);
+putchar('0' + g);
 
-if (c + d + e != 9 + 8 + 7)
+if (g + h + i != 9 + 8 + 7)
 {
 putchar(',');
 putchar(' ')
 }
 }
 
-c++;
+g++;
 }
-d++;
+h++;
 }
-e++;
+i++;
 }
 putchar('\n');
 return (0);

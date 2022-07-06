@@ -1,28 +1,24 @@
 #include <stdio.h>
 /**
- * main - prints the first 50 Fibonacci numbers
- *
- * Return: always 0
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-int i;
-long int a = 1, b = 2;
-long int next = a + b;
-printf("%lu, %lu, ", a, b);
-i = 3;
-while (i < 101)
+int a = 0, b = 1, next = 0;
+int sum = 0;
+while (next < 4000000)
 {
-printf("%lu", next);
-if (i == 50)
-break;
-else
-continue;
-printf(", ");
+next = a + b;
 a = b;
 b = next;
-next = a + b;
-i++;
+if (next % 2 == 0)
+sum += next;
 }
+printf("%i\n", sum);
 return (0);
 }
+
+

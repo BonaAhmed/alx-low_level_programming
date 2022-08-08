@@ -1,5 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0fb6f638aebcacba8fffed3b13ede16f7efaa1da
 int _putchar(char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);

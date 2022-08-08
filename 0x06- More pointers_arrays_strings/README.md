@@ -1,1 +1,0 @@
-This is READ ME for more pointers, arrays, strings
